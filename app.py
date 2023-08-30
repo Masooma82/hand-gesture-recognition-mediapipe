@@ -224,6 +224,7 @@ def calc_landmark_list(image, landmarks):
         # landmark_z = landmark.z
 
         landmark_point.append([landmark_x, landmark_y])
+    #print(landmark_point)
 
     return landmark_point
 
@@ -251,6 +252,7 @@ def pre_process_landmark(landmark_list):
         return n / max_value
 
     temp_landmark_list = list(map(normalize_, temp_landmark_list))
+    #print(temp_landmark_list)
 
     return temp_landmark_list
 
